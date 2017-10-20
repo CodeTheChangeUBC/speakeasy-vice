@@ -1,0 +1,27 @@
+name: Speakeasy Vice
+version: 0.1.0
+description: A simple website for UBC's VICE and SpeakEasy.
+icon: rebel
+author:
+  name: Code the Change UBC
+  email: codethechangeubc@gmail.com
+homepage: https://github.com/code-the-change-ubc/grav-theme-speakeasy-vice
+demo: http://demo.yoursite.com
+keywords: grav, theme, etc
+bugs: https://github.com/code-the-change-ubc/grav-theme-speakeasy-vice/issues
+readme: https://github.com/code-the-change-ubc/grav-theme-speakeasy-vice/blob/develop/README.md
+license: MIT
+
+form:
+  validation: loose
+  fields:
+    dropdown.enabled:
+        type: toggle
+        label: Dropdown in Menu
+        highlight: 1
+        default: 1
+        options:
+          1: PLUGIN_ADMIN.ENABLED
+          0: PLUGIN_ADMIN.DISABLED
+        validate:
+          type: bool

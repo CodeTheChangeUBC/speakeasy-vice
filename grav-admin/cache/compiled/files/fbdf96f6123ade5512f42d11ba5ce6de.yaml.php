@@ -2,14 +2,14 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/pchauhan/Desktop/VICE/speakeasy-vice/grav-admin/user/config/system.yaml',
-    'modified' => 1508348490,
+    'modified' => 1508478553,
     'data' => [
         'absolute_urls' => false,
         'home' => [
             'alias' => '/home'
         ],
         'pages' => [
-            'theme' => 'antimatter',
+            'theme' => 'speakeasy-vice',
             'markdown' => [
                 'extra' => false
             ],
