@@ -1,0 +1,11 @@
+email: codethechangeubc@gmail.com
+fullname: Admin
+title: Administrator
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$k3sgoWJbeBNM03d2yho78uytoHOaOr9XLgeBY/nznMVIqHwwEAdv2
