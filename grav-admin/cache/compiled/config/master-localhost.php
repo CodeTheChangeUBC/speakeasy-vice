@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1508478636,
-    'checksum' => '4f3cd755364b2bb2c3c05147d59d3a90',
+    'timestamp' => 1509068783,
+    'checksum' => '5f18fa86d16843ae5067c76839a11e07',
     'files' => [
         'user/config' => [
             'media' => [
@@ -15,7 +15,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1508348490
+                'modified' => 1509068780
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -514,18 +514,18 @@ return [
             ]
         ],
         'site' => [
-            'title' => 'Grav',
+            'title' => 'VICE & Speakeasy',
             'default_lang' => 'en',
             'author' => [
-                'name' => 'Joe Bloggs',
-                'email' => 'joe@test.com'
+                'name' => 'Code the Change UBC',
+                'email' => 'codethechangeubc@gmail.com'
             ],
             'taxonomies' => [
                 0 => 'category',
                 1 => 'tag'
             ],
             'metadata' => [
-                'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+                'description' => 'VICE and Speakeasy'
             ],
             'summary' => [
                 'enabled' => true,
