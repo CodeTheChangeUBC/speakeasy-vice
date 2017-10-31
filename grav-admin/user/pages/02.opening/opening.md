@@ -5,7 +5,15 @@ buttons:
       url: '#main'
 menu: Opening 
 ---
-sth
+<span class="AMS">
+#**AMS**
+</span>
 
-<div class="AMS">#**AMS**</div>
-<div class="AMS">#WELLNESS</div>
+
+<span class="Wellness">
+#**WELLNESS**
+</span>
+
+<span class="Enter">
+[Enter](http://www.google.com)
+</span>
