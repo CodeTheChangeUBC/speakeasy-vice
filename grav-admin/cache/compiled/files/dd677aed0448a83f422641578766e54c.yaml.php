@@ -2,15 +2,15 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/pchauhan/Desktop/VICE/speakeasy-vice/grav-admin/user/config/site.yaml',
-    'modified' => 1508348490,
+    'modified' => 1509068780,
     'data' => [
-        'title' => 'Grav',
+        'title' => 'VICE & Speakeasy',
         'author' => [
-            'name' => 'Joe Bloggs',
-            'email' => 'joe@test.com'
+            'name' => 'Code the Change UBC',
+            'email' => 'codethechangeubc@gmail.com'
         ],
         'metadata' => [
-            'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+            'description' => 'VICE and Speakeasy'
         ]
     ]
 ];

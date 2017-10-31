@@ -1,14 +1,14 @@
 <?php
 
-/* error.html.twig */
-class __TwigTemplate_761ff02bd642f0d25eb1d42b8956d9b410b26f0f5a01073f8b5215323a0fd948 extends Twig_Template
+/* example.html.twig */
+class __TwigTemplate_1370475cbc4011345c0e9115e697c882155e53c4e1752659d820940218421e90 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("partials/base.html.twig", "error.html.twig", 1);
+        $this->parent = $this->loadTemplate("partials/pagebase.html.twig", "example.html.twig", 1);
         $this->blocks = array(
             'content' => array($this, 'block_content'),
         );
@@ -16,7 +16,7 @@ class __TwigTemplate_761ff02bd642f0d25eb1d42b8956d9b410b26f0f5a01073f8b5215323a0
 
     protected function doGetParent(array $context)
     {
-        return "partials/base.html.twig";
+        return "partials/pagebase.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
@@ -28,19 +28,15 @@ class __TwigTemplate_761ff02bd642f0d25eb1d42b8956d9b410b26f0f5a01073f8b5215323a0
     public function block_content($context, array $blocks = array())
     {
         // line 4
-        echo "    <div class=\"lead text-center\">
-        <h1>Error!</h1>
-        ";
-        // line 6
+        echo "    ";
         echo $this->getAttribute(($context["page"] ?? null), "content", array());
         echo "
-    </div>
 ";
     }
 
     public function getTemplateName()
     {
-        return "error.html.twig";
+        return "example.html.twig";
     }
 
     public function isTraitable()
@@ -50,7 +46,7 @@ class __TwigTemplate_761ff02bd642f0d25eb1d42b8956d9b410b26f0f5a01073f8b5215323a0
 
     public function getDebugInfo()
     {
-        return array (  35 => 6,  31 => 4,  28 => 3,  11 => 1,);
+        return array (  31 => 4,  28 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -63,14 +59,11 @@ class __TwigTemplate_761ff02bd642f0d25eb1d42b8956d9b410b26f0f5a01073f8b5215323a0
 
     public function getSourceContext()
     {
-        return new Twig_Source("{% extends 'partials/base.html.twig' %}
+        return new Twig_Source("{% extends 'partials/pagebase.html.twig' %}
 
 {% block content %}
-    <div class=\"lead text-center\">
-        <h1>Error!</h1>
-        {{ page.content }}
-    </div>
+    {{ page.content }}
 {% endblock %}
-", "error.html.twig", "/Users/ya-chenghsieh/Documents/Vice/speakeasy-vice/grav-admin/user/themes/speakeasy-vice/templates/error.html.twig");
+", "example.html.twig", "/Users/pchauhan/Desktop/VICE/speakeasy-vice/grav-admin/user/themes/speakeasy-vice/templates/example.html.twig");
     }
 }
