@@ -266,6 +266,6 @@ class __TwigTemplate_0a735f955877adf0e2c81fe71c35a372c69a961ab3cdaa8c06a240cb985
     {% endfor %}
 </ul>
 
-", "partials/navigation.html.twig", "/Users/pchauhan/Desktop/VICE/speakeasy-vice/grav-admin/user/themes/speakeasy-vice/templates/partials/navigation.html.twig");
+", "partials/navigation.html.twig", "/Users/ya-chenghsieh/Documents/Vice/speakeasy-vice/grav-admin/user/themes/speakeasy-vice/templates/partials/navigation.html.twig");
     }
 }
