@@ -33,28 +33,56 @@ html {
 }
 
 /* Navigation */
-.menu {
-    overflow: hidden;
-    font-family: Arial;
-    background-color: #EFEFEF;
-    position: fixed;
-    top: 0;
-    width: 100%;
+.header {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 5rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0.05rem 1rem rgba(0, 0, 0, 0.15);
 }
 
-.menu a {
-    float: right;
-    position: relative;
-    font-size: 16px;
-    color: #37474F;
-    text-align: center;
-    padding: 14px 30px;
-    text-decoration: none;
+.header li {
+	list-style: none;
 }
 
-#logo {
-	float: left;
-	height: 40px;
+.header a {
+  text-decoration: none;
+  float: right;
+  font-family: Helvetica, Arial, sans-serif;
+	margin-right: 50px;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #37474F;
+	position: relative;
+	padding-bottom: 10px;
+}
+
+.header a:hover {
+	color: #37474F;
+}
+
+.header a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #37474F;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.header a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 /* Footer */

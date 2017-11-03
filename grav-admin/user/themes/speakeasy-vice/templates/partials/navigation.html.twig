@@ -9,10 +9,7 @@
 </head>
 
 <body>
-<div class="menu">
-<div class="pic">
-<img id="logo" src="https://bizcentralusa.com/wp-content/uploads/2016/05/placeholder-sample-logo.png"> </img>
-</div>
+<div class="header">
 {% macro loop(page) %}
     {% for p in page.children.visible %}
         {% set current_page = (p.active or p.activeChild) ? 'selected' : '' %}

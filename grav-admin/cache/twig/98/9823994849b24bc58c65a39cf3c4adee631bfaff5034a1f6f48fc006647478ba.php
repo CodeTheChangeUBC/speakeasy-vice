@@ -10,47 +10,64 @@ class __TwigTemplate_0a735f955877adf0e2c81fe71c35a372c69a961ab3cdaa8c06a240cb985
         $this->parent = false;
 
         $this->blocks = array(
+            'stylesheets' => array($this, 'block_stylesheets'),
         );
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        // line 24
+        // line 1
+        echo "<!DOCTYPE html>
+<html>
+<head>
+<title>navigation bar</title>
+";
+        // line 5
+        $this->displayBlock('stylesheets', $context, $blocks);
+        // line 8
+        echo $this->getAttribute(($context["assets"] ?? null), "css", array(), "method");
+        echo "
+</head>
+
+<body>
+<div class=\"header\">
+";
+        // line 36
         echo "
 <ul>
     ";
-        // line 26
+        // line 38
         if ($this->getAttribute($this->getAttribute(($context["theme_config"] ?? null), "dropdown", array()), "enabled", array())) {
-            // line 27
+            // line 39
             echo "        ";
             echo $this->getAttribute($this, "loop", array(0 => ($context["pages"] ?? null)), "method");
             echo "
     ";
         } else {
-            // line 29
+            // line 41
             echo "        ";
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute(($context["pages"] ?? null), "children", array()), "visible", array()));
             foreach ($context['_seq'] as $context["_key"] => $context["page"]) {
-                // line 30
+                // line 42
                 echo "            ";
                 $context["current_page"] = ((($this->getAttribute($context["page"], "active", array()) || $this->getAttribute($context["page"], "activeChild", array()))) ? ("selected") : (""));
-                // line 31
+                // line 43
                 echo "            <li class=\"";
                 echo ($context["current_page"] ?? null);
                 echo "\">
                 <a href=\"";
-                // line 32
+                // line 44
                 echo $this->getAttribute($context["page"], "url", array());
                 echo "\">
                     ";
-                // line 33
+                // line 45
                 if ($this->getAttribute($this->getAttribute($context["page"], "header", array()), "icon", array())) {
                     echo "<i class=\"fa fa-";
                     echo $this->getAttribute($this->getAttribute($context["page"], "header", array()), "icon", array());
                     echo "\"></i>";
                 }
-                // line 34
+                // line 46
                 echo "                    ";
                 echo $this->getAttribute($context["page"], "menu", array());
                 echo "
@@ -61,28 +78,28 @@ class __TwigTemplate_0a735f955877adf0e2c81fe71c35a372c69a961ab3cdaa8c06a240cb985
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['page'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 38
+            // line 50
             echo "    ";
         }
-        // line 39
+        // line 51
         echo "    ";
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["site"] ?? null), "menu", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["mitem"]) {
-            // line 40
+            // line 52
             echo "        <li>
             <a href=\"";
-            // line 41
+            // line 53
             echo $this->getAttribute($context["mitem"], "url", array());
             echo "\">
                 ";
-            // line 42
+            // line 54
             if ($this->getAttribute($context["mitem"], "icon", array())) {
                 echo "<i class=\"fa fa-";
                 echo $this->getAttribute($context["mitem"], "icon", array());
                 echo "\"></i>";
             }
-            // line 43
+            // line 55
             echo "                ";
             echo $this->getAttribute($context["mitem"], "text", array());
             echo "
@@ -93,13 +110,23 @@ class __TwigTemplate_0a735f955877adf0e2c81fe71c35a372c69a961ab3cdaa8c06a240cb985
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['mitem'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 47
+        // line 59
         echo "</ul>
-
+</div>
+</body>
+</html>
 ";
     }
 
-    // line 1
+    // line 5
+    public function block_stylesheets($context, array $blocks = array())
+    {
+        // line 6
+        echo "  ";
+        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/custom.css", 1 => 100), "method");
+    }
+
+    // line 13
     public function getloop($__page__ = null, ...$__varargs__)
     {
         $context = $this->env->mergeGlobals(array(
@@ -111,62 +138,62 @@ class __TwigTemplate_0a735f955877adf0e2c81fe71c35a372c69a961ab3cdaa8c06a240cb985
 
         ob_start();
         try {
-            // line 2
+            // line 14
             echo "    ";
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute(($context["page"] ?? null), "children", array()), "visible", array()));
             foreach ($context['_seq'] as $context["_key"] => $context["p"]) {
-                // line 3
+                // line 15
                 echo "        ";
                 $context["current_page"] = ((($this->getAttribute($context["p"], "active", array()) || $this->getAttribute($context["p"], "activeChild", array()))) ? ("selected") : (""));
-                // line 4
+                // line 16
                 echo "        ";
                 if (($this->getAttribute($this->getAttribute($this->getAttribute($context["p"], "children", array()), "visible", array()), "count", array()) > 0)) {
-                    // line 5
+                    // line 17
                     echo "            <li class=\"has-children ";
                     echo ($context["current_page"] ?? null);
                     echo "\">
                 <a href=\"";
-                    // line 6
+                    // line 18
                     echo $this->getAttribute($context["p"], "url", array());
                     echo "\">
                     ";
-                    // line 7
+                    // line 19
                     if ($this->getAttribute($this->getAttribute($context["p"], "header", array()), "icon", array())) {
                         echo "<i class=\"fa fa-";
                         echo $this->getAttribute($this->getAttribute($context["p"], "header", array()), "icon", array());
                         echo "\"></i>";
                     }
-                    // line 8
+                    // line 20
                     echo "                    ";
                     echo $this->getAttribute($context["p"], "menu", array());
                     echo "
                 </a>
                 <ul>
                     ";
-                    // line 11
+                    // line 23
                     echo $this->getAttribute($this, "loop", array(0 => $context["p"]), "method");
                     echo "
                 </ul>
             </li>
         ";
                 } else {
-                    // line 15
+                    // line 27
                     echo "            <li class=\"";
                     echo ($context["current_page"] ?? null);
                     echo "\">
                 <a href=\"";
-                    // line 16
+                    // line 28
                     echo $this->getAttribute($context["p"], "url", array());
                     echo "\">
                     ";
-                    // line 17
+                    // line 29
                     if ($this->getAttribute($this->getAttribute($context["p"], "header", array()), "icon", array())) {
                         echo "<i class=\"fa fa-";
                         echo $this->getAttribute($this->getAttribute($context["p"], "header", array()), "icon", array());
                         echo "\"></i>";
                     }
-                    // line 18
+                    // line 30
                     echo "                    ";
                     echo $this->getAttribute($context["p"], "menu", array());
                     echo "
@@ -174,7 +201,7 @@ class __TwigTemplate_0a735f955877adf0e2c81fe71c35a372c69a961ab3cdaa8c06a240cb985
             </li>
         ";
                 }
-                // line 22
+                // line 34
                 echo "    ";
             }
             $_parent = $context['_parent'];
@@ -205,7 +232,7 @@ class __TwigTemplate_0a735f955877adf0e2c81fe71c35a372c69a961ab3cdaa8c06a240cb985
 
     public function getDebugInfo()
     {
-        return array (  178 => 22,  170 => 18,  164 => 17,  160 => 16,  155 => 15,  148 => 11,  141 => 8,  135 => 7,  131 => 6,  126 => 5,  123 => 4,  120 => 3,  115 => 2,  103 => 1,  97 => 47,  86 => 43,  80 => 42,  76 => 41,  73 => 40,  68 => 39,  65 => 38,  54 => 34,  48 => 33,  44 => 32,  39 => 31,  36 => 30,  31 => 29,  25 => 27,  23 => 26,  19 => 24,);
+        return array (  205 => 34,  197 => 30,  191 => 29,  187 => 28,  182 => 27,  175 => 23,  168 => 20,  162 => 19,  158 => 18,  153 => 17,  150 => 16,  147 => 15,  142 => 14,  130 => 13,  125 => 6,  122 => 5,  114 => 59,  103 => 55,  97 => 54,  93 => 53,  90 => 52,  85 => 51,  82 => 50,  71 => 46,  65 => 45,  61 => 44,  56 => 43,  53 => 42,  48 => 41,  42 => 39,  40 => 38,  36 => 36,  28 => 8,  26 => 5,  20 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -218,7 +245,19 @@ class __TwigTemplate_0a735f955877adf0e2c81fe71c35a372c69a961ab3cdaa8c06a240cb985
 
     public function getSourceContext()
     {
-        return new Twig_Source("{% macro loop(page) %}
+        return new Twig_Source("<!DOCTYPE html>
+<html>
+<head>
+<title>navigation bar</title>
+{% block stylesheets %}
+  {% do assets.addCss('theme://css/custom.css', 100) %}
+{% endblock %}
+{{ assets.css() }}
+</head>
+
+<body>
+<div class=\"header\">
+{% macro loop(page) %}
     {% for p in page.children.visible %}
         {% set current_page = (p.active or p.activeChild) ? 'selected' : '' %}
         {% if p.children.visible.count > 0 %}
@@ -265,7 +304,9 @@ class __TwigTemplate_0a735f955877adf0e2c81fe71c35a372c69a961ab3cdaa8c06a240cb985
         </li>
     {% endfor %}
 </ul>
-
-", "partials/navigation.html.twig", "/Users/ya-chenghsieh/Documents/Vice/speakeasy-vice/grav-admin/user/themes/speakeasy-vice/templates/partials/navigation.html.twig");
+</div>
+</body>
+</html>
+", "partials/navigation.html.twig", "/Users/mikaylapreete/Documents/VICE/speakeasy-vice/grav-admin/user/themes/speakeasy-vice/templates/partials/navigation.html.twig");
     }
 }

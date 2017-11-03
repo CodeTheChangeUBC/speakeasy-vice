@@ -7,74 +7,30 @@ class __TwigTemplate_cdc27c60a1e17906fc833827b5044a7c623f6ef13baa16f34eebfab8344
     {
         parent::__construct($env);
 
-        $this->parent = false;
-
+        // line 1
+        $this->parent = $this->loadTemplate("partials/pagebase.html.twig", "opening.html.twig", 1);
         $this->blocks = array(
+            'content' => array($this, 'block_content'),
         );
+    }
+
+    protected function doGetParent(array $context)
+    {
+        return "partials/pagebase.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        // line 1
-        echo "<!DOCTYPE html>
-<html>
-<title>Opening</title>
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
+    }
 
-
-<!-- Styles -->\t
-<style style=\"text/css\">
-body {
-  background-image: url(\"/Users/ya-chenghsieh/Documents/Vice/speakeasy-vice/grav-admin/user/pages/02.opening/meditation-rocks.jpg\");
-  background-position: 50% 50%;
-  background-repeat: repeat;
-}
-</style>
-<body>
-
- 
- <div align=\"left|right|center|justify\">
-     <center><font size=\"7\"><h1><u>AMS</u></h1></font>
-         <font size=\"7\"><b>WELLNESS</b></font></center>
-</div>    
-     <center><font size=\"7\"><form action=\"http://google.com\">
-    <input type=\"submit\" value=\"ENTER\" /></font></form></center>
-<!--
-        <form>
-    <button formaction=\"http://google.com\">ENTER</button>
-</form>
--->
-</body>
-
-<!--
-<head>
-        <style>
-
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            width: 100%;
-        }
-
-        body {
-            display: table;
-        }
-
-        .my-block {
-            text-align: center;
-            display: table-cell;
-            vertical-align: middle;
-        }
-        </style>
-    </head>
-    <body>
-    <div class=\"my-block\">
-    <font size=\"7\">AMS</font></br>
-    <font size=\"7\">WELLNESS</font></br>
-    </div>
-    </body>
--->
-</html>
+    // line 3
+    public function block_content($context, array $blocks = array())
+    {
+        // line 4
+        echo "    ";
+        echo $this->getAttribute(($context["page"] ?? null), "content", array());
+        echo "
 ";
     }
 
@@ -83,9 +39,14 @@ body {
         return "opening.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  19 => 1,);
+        return array (  31 => 4,  28 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -98,65 +59,11 @@ body {
 
     public function getSourceContext()
     {
-        return new Twig_Source("<!DOCTYPE html>
-<html>
-<title>Opening</title>
+        return new Twig_Source("{% extends 'partials/pagebase.html.twig' %}
 
-
-<!-- Styles -->\t
-<style style=\"text/css\">
-body {
-  background-image: url(\"/Users/ya-chenghsieh/Documents/Vice/speakeasy-vice/grav-admin/user/pages/02.opening/meditation-rocks.jpg\");
-  background-position: 50% 50%;
-  background-repeat: repeat;
-}
-</style>
-<body>
-
- 
- <div align=\"left|right|center|justify\">
-     <center><font size=\"7\"><h1><u>AMS</u></h1></font>
-         <font size=\"7\"><b>WELLNESS</b></font></center>
-</div>    
-     <center><font size=\"7\"><form action=\"http://google.com\">
-    <input type=\"submit\" value=\"ENTER\" /></font></form></center>
-<!--
-        <form>
-    <button formaction=\"http://google.com\">ENTER</button>
-</form>
--->
-</body>
-
-<!--
-<head>
-        <style>
-
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            width: 100%;
-        }
-
-        body {
-            display: table;
-        }
-
-        .my-block {
-            text-align: center;
-            display: table-cell;
-            vertical-align: middle;
-        }
-        </style>
-    </head>
-    <body>
-    <div class=\"my-block\">
-    <font size=\"7\">AMS</font></br>
-    <font size=\"7\">WELLNESS</font></br>
-    </div>
-    </body>
--->
-</html>
-", "opening.html.twig", "/Users/ya-chenghsieh/Documents/Vice/speakeasy-vice/grav-admin/user/themes/speakeasy-vice/templates/opening.html.twig");
+{% block content %}
+    {{ page.content }}
+{% endblock %}
+", "opening.html.twig", "/Users/mikaylapreete/Documents/VICE/speakeasy-vice/grav-admin/user/themes/speakeasy-vice/templates/opening.html.twig");
     }
 }

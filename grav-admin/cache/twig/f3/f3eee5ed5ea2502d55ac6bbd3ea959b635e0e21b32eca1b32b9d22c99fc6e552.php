@@ -64,6 +64,6 @@ class __TwigTemplate_1370475cbc4011345c0e9115e697c882155e53c4e1752659d8209402184
 {% block content %}
     {{ page.content }}
 {% endblock %}
-", "example.html.twig", "/Users/pchauhan/Desktop/VICE/speakeasy-vice/grav-admin/user/themes/speakeasy-vice/templates/example.html.twig");
+", "example.html.twig", "/Users/mikaylapreete/Documents/VICE/speakeasy-vice/grav-admin/user/themes/speakeasy-vice/templates/example.html.twig");
     }
 }
