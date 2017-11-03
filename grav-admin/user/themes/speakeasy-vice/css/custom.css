@@ -21,40 +21,15 @@ html {
 /* Homepage */
 .AMS {
     color: red;
-
+    
 }
 
 .home-bg {
     width: 100%;
     height: 100%;   //500px
-    background-image: ...;
+    background-image: url("../../../../../images/welcomebg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-/* Navigation */
-.menu {
-    overflow: hidden;
-    font-family: Arial;
-    background-color: #EFEFEF;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.menu a {
-    float: right;
-    position: relative;
-    font-size: 16px;
-    color: #37474F;
-    text-align: center;
-    padding: 14px 30px;
-    text-decoration: none;
-}
-
-#logo {
-	float: left;
-	height: 40px;
 }
 
 /* Footer */
@@ -80,10 +55,6 @@ html {
 	line-height: 1.5em;
 }
 
-.contact {
-    background-color: black;
-}
-
 .copyright {
 	margin-top: 3em;
 	font-size: 0.75em;
@@ -92,3 +63,4 @@ html {
 .copyright p {
 	margin-top: 1em;
 }
+
