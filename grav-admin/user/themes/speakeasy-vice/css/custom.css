@@ -27,7 +27,7 @@ html {
 .home-bg {
     width: 100%;
     height: 100%;   //500px
-    background-image: url("../../../../../images/welcomebg.jpg");
+    background-image: url("../images/rocks.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
