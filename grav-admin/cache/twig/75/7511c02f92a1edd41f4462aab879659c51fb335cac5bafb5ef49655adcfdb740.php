@@ -317,6 +317,6 @@ class __TwigTemplate_33375b635f04f34223a1ba1fec2aeb29982d507881a2569dc28bd5d97a6
 
 </body>
 </html>
-", "partials/base.html.twig", "/Users/ya-chenghsieh/Documents/Vice/speakeasy-vice/grav-admin/user/themes/speakeasy-vice/templates/partials/base.html.twig");
+", "partials/base.html.twig", "/Users/andrea/Desktop/CTC VICE/speakeasy-vice/grav-admin/user/themes/speakeasy-vice/templates/partials/base.html.twig");
     }
 }
