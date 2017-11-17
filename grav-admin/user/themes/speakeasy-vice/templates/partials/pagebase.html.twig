@@ -20,6 +20,7 @@
 
       {% block javascripts %}
         {% do assets.addJs('jquery', 100) %}
+        {% do assets.addJs('theme://js/javascript.js', 100) %}
       {% endblock %}
       {{ assets.js() }}
 
