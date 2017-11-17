@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/ya-chenghsieh/Documents/Vice/speakeasy-vice/grav-admin/user/plugins/admin/languages/ar.yaml',
-    'modified' => 1508790576,
+    'modified' => 1509673289,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_BETA_MSG' => 'هذا إصدار بيتا! استخدم هذا في الإنتاج على مسؤوليتك الخاصة...',

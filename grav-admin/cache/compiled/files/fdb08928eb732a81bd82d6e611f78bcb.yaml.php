@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/ya-chenghsieh/Documents/Vice/speakeasy-vice/grav-admin/user/config/system.yaml',
-    'modified' => 1508790576,
+    'modified' => 1510883031,
     'data' => [
         'absolute_urls' => false,
         'home' => [
@@ -14,7 +14,7 @@ return [
                 'extra' => false
             ],
             'process' => [
-                'markdown' => true,
+                'markdown' => false,
                 'twig' => false
             ]
         ],

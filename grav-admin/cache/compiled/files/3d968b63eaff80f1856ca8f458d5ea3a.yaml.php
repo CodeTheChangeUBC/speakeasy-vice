@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/ya-chenghsieh/Documents/Vice/speakeasy-vice/grav-admin/user/plugins/admin/languages/it.yaml',
-    'modified' => 1508790576,
+    'modified' => 1509673289,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_BETA_MSG' => 'Questa è una versione beta! Usare in produzione a proprio rischio e pericolo…',

@@ -1,0 +1,38 @@
+1511489514
+a:2:{s:7:"content";s:786:"<!DOCTYPE html>
+<html>
+<title>Opening</title>
+
+
+<!-- Styles -->	
+<style style="text/css">
+body {
+  background-image: url("../user/themes/speakeasy-vice/images/rocks.jpg");
+  background-position: 50% 50%;
+  background-repeat: repeat;
+}
+</style>
+<body>
+
+ 
+ <div align="left|right|center|justify">
+     <center><font size="7"><h1><u>AMS</u></h1></font>
+         <font size="7"><b>WELLNESS</b></font></center>
+</div>    
+     <center><font size="7"><form action="http://google.com">
+    <input type="submit" value="ENTER" /></font></form></center>
+<!--
+        <form>
+    <button formaction="http://google.com">ENTER</button>
+</form>
+-->
+</body>
+
+</html>
+
+<!--
+<div style="background-image: url('../images/rocks.jpg');" class="home-bg">
+    <h1> AMS </h1>
+    <h1> WELLNESS </h1>
+</div>-->
+";s:12:"content_meta";N;}

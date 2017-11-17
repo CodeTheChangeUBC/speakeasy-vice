@@ -1,0 +1,60 @@
+1511488083
+a:2:{s:7:"content";s:1221:"<!DOCTYPE html>
+<html>
+<title>Opening</title>
+
+
+<!-- Styles -->	
+<style style="text/css">
+body {
+  background-image: url("/Users/ya-chenghsieh/Documents/Vice/speakeasy-vice/grav-admin/user/pages/02.opening/meditation-rocks.jpg");
+  background-position: 50% 50%;
+  background-repeat: repeat;
+}
+</style>
+<body>
+
+ 
+ <div align="left|right|center|justify">
+     <center><font size="7"><h1><u>AMS</u></h1></font>
+         <font size="7"><b>WELLNESS</b></font></center>
+</div>    
+     <center><font size="7"><form action="http://google.com">
+    <input type="submit" value="ENTER" /></font></form></center>
+<!--
+        <form>
+    <button formaction="http://google.com">ENTER</button>
+</form>
+-->
+</body>
+
+<!--
+<head>
+        <style>
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        body {
+            display: table;
+        }
+
+        .my-block {
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        </style>
+    </head>
+    <body>
+    <div class="my-block">
+    <font size="7">AMS</font></br>
+    <font size="7">WELLNESS</font></br>
+    </div>
+    </body>
+-->
+</html>";s:12:"content_meta";N;}

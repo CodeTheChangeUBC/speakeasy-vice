@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/ya-chenghsieh/Documents/Vice/speakeasy-vice/grav-admin/user/plugins/admin/blueprints.yaml',
-    'modified' => 1508790576,
+    'modified' => 1509673289,
     'data' => [
         'name' => 'Admin Panel',
         'version' => '1.6.4',

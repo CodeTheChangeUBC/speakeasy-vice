@@ -1,0 +1,19 @@
+1511488825
+a:2:{s:7:"content";s:376:"
+
+
+<!-- Styles -->	
+ 
+<!--
+ <div  class="home-bg">
+     <center><font size="7"><h1><u>AMS</u></h1></font>
+         <font size="7"><b>WELLNESS</b></font></center>
+</div>    
+     <center><font size="7"><form action="http://google.com">
+    <input type="submit" value="ENTER" /></font></form></center>
+-->
+
+<div class="home-bg">
+    <h1> AMS </h1>
+    <h1> WELLNESS </h1>
+</div>";s:12:"content_meta";N;}

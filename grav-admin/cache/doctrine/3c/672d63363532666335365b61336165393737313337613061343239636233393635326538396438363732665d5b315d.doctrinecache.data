@@ -1,0 +1,19 @@
+1511491404
+a:2:{s:7:"content";s:306:"<title>Welcome</title>
+
+<div class="welcome">
+      <h1>Welcome</h1>
+      <p>Here, you can find information on 
+ 	<br>1.
+    <br>2.
+    <br>3.
+    
+</p>
+
+<div class="image">
+      <img class="image" src="../themes/speakeasy-vice/images/rocks.jpg" alt="rocks" width="200" height="100">
+    </div>
+</div>
+
+
+";s:12:"content_meta";N;}
