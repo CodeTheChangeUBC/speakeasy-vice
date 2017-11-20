@@ -1,3 +1,4 @@
+<ul>
 {% macro loop(page) %}
     {% for p in page.children.visible %}
         {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
@@ -22,8 +23,8 @@
         {% endif %}
     {% endfor %}
 {% endmacro %}
-
-<ul class="navigation">
+</ul>
+<ul>
     {% if theme_config.dropdown.enabled %}
         {{ _self.loop(pages) }}
     {% else %}
@@ -50,3 +51,5 @@
         <li><i class="fa fa-lock"></i> {% include 'partials/login-status.html.twig' %}</li>
     {% endif %}
 </ul>
+
+<p class="plus-sign"> + </p>

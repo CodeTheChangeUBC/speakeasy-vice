@@ -48,11 +48,19 @@ html {
 	list-style: none;
 }
 
+ .header p{
+	color: white;
+	padding-right: 30px;
+	margin-top: 30px;
+	font-family: Avenir, Arial, sans-serif;
+	font-size: 0.9rem;
+}
+
 .header a {
   text-decoration: none;
   float: right;
-  font-family: Helvetica, Arial, sans-serif;
-	margin-right: 50px;
+  font-family: Avenir, Arial, sans-serif;
+	margin-right: 60px;
   margin-top: 30px;
   font-size: 0.9rem;
   color: #37474F;
@@ -86,31 +94,65 @@ html {
   transform: scaleX(1);
 }
 
-.header .icon {
-	display: none;
+
+/*Responsive Styles*/
+@media screen and (max-width : 760px){
+
+	.header a {
+		display: none;
+	}
+	.header p{
+		color: #37474F;
+	  float: right;
+		z-index: 15;
+		position: relative;
+	}
 }
 
-@media screen and (max-width: 600px) {
-  .header a:not(:first-child) {display: none;}
-  .header a.icon {
-    float: right;
-    display: block;
-  }
-}
 
-@media screen and (max-width: 600px) {
-  .header.responsive {position: relative;}
-  .header.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-	.header.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
+/* CODE FOR VERTICAL MOBILE MENU
+      .header {
+				position: static;
+			}
+
+			.header li {
+			  list-style: none;
+				background-color: white;
+				text-align: center;
+				margin-top: 0;
+				margin-right: 0;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				width: 100%;
+			}
+
+			.header a {
+			  text-decoration: none;
+			  font-family: Avenir, Arial, sans-serif;
+			  font-size: 0.9rem;
+			  color: #37474F;
+				position: relative;
+				width: 100%;
+				margin-right: 0;
+				margin-top: 0;
+				margin-right: 0;
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+
+			.header a:hover:before {
+			  visibility: hidden;
+			}
+
+			.header a:active{
+				background-color: #C1E288;
+			}
+
+			.header a:focus{
+				background-color: #C1E288;
+			}
+}*/
+
 
 /* Footer */
 .footer {

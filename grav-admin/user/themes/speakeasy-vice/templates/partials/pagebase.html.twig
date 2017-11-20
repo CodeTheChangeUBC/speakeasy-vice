@@ -28,15 +28,13 @@
   </head>
   <body>
     {% block header %}
-      <div class="navbar">
-        <img class="logo" src="#"/>
 
         {% block header_navigation %}
           <nav class="header">
+            <p> Menu </p>
             {% include 'partials/navigation.html.twig' %}
           </nav>
         {% endblock %}
-      </div>
     {% endblock %}
 
     {% block body %}

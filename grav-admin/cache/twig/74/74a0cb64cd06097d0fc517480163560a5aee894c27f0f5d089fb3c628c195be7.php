@@ -37,23 +37,23 @@ class __TwigTemplate_dadbe539235cdd97641af31e30adf044f574f2fe46e48d1c90639987608
     ";
         // line 7
         $this->displayBlock('head', $context, $blocks);
-        // line 27
+        // line 28
         echo "  </head>
   <body>
     ";
-        // line 29
+        // line 30
         $this->displayBlock('header', $context, $blocks);
+        // line 39
+        echo "
+    ";
         // line 40
-        echo "
-    ";
-        // line 41
         $this->displayBlock('body', $context, $blocks);
-        // line 46
+        // line 45
         echo "
     ";
-        // line 47
+        // line 46
         $this->displayBlock('footer', $context, $blocks);
-        // line 74
+        // line 73
         echo "  </body>
 </html>
 ";
@@ -94,7 +94,7 @@ class __TwigTemplate_dadbe539235cdd97641af31e30adf044f574f2fe46e48d1c90639987608
       ";
         // line 21
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 24
+        // line 25
         echo "      ";
         echo $this->getAttribute(($context["assets"] ?? null), "js", array(), "method");
         echo "
@@ -119,29 +119,30 @@ class __TwigTemplate_dadbe539235cdd97641af31e30adf044f574f2fe46e48d1c90639987608
         echo "        ";
         $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "jquery", 1 => 100), "method");
         // line 23
+        echo "        ";
+        $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "theme://js/javascript.js", 1 => 100), "method");
+        // line 24
         echo "      ";
     }
 
-    // line 29
+    // line 30
     public function block_header($context, array $blocks = array())
     {
-        // line 30
-        echo "      <div class=\"navbar\">
-        <img class=\"logo\" src=\"#\"/>
-
+        // line 31
+        echo "
         ";
-        // line 33
+        // line 32
         $this->displayBlock('header_navigation', $context, $blocks);
         // line 38
-        echo "      </div>
-    ";
+        echo "    ";
     }
 
-    // line 33
+    // line 32
     public function block_header_navigation($context, array $blocks = array())
     {
-        // line 34
+        // line 33
         echo "          <nav class=\"header\">
+            <p> Menu </p>
             ";
         // line 35
         $this->loadTemplate("partials/navigation.html.twig", "partials/pagebase.html.twig", 35)->display($context);
@@ -150,29 +151,29 @@ class __TwigTemplate_dadbe539235cdd97641af31e30adf044f574f2fe46e48d1c90639987608
         ";
     }
 
-    // line 41
+    // line 40
     public function block_body($context, array $blocks = array())
     {
-        // line 42
+        // line 41
         echo "      <div class=\"container\">
         ";
-        // line 43
+        // line 42
         $this->displayBlock('content', $context, $blocks);
-        // line 44
+        // line 43
         echo "      </div>
     ";
     }
 
-    // line 43
+    // line 42
     public function block_content($context, array $blocks = array())
     {
         echo " ";
     }
 
-    // line 47
+    // line 46
     public function block_footer($context, array $blocks = array())
     {
-        // line 48
+        // line 47
         echo "      <div class=\"footer\">
         <div class=\"contact\">
           <div class=\"contact-info\">
@@ -213,7 +214,7 @@ class __TwigTemplate_dadbe539235cdd97641af31e30adf044f574f2fe46e48d1c90639987608
 
     public function getDebugInfo()
     {
-        return array (  176 => 48,  173 => 47,  167 => 43,  162 => 44,  160 => 43,  157 => 42,  154 => 41,  149 => 36,  147 => 35,  144 => 34,  141 => 33,  136 => 38,  134 => 33,  129 => 30,  126 => 29,  122 => 23,  119 => 22,  116 => 21,  112 => 18,  109 => 17,  106 => 16,  98 => 24,  96 => 21,  90 => 19,  88 => 16,  83 => 14,  80 => 13,  78 => 12,  66 => 8,  63 => 7,  57 => 74,  55 => 47,  52 => 46,  50 => 41,  47 => 40,  45 => 29,  41 => 27,  39 => 7,  34 => 5,  29 => 2,  27 => 1,);
+        return array (  177 => 47,  174 => 46,  168 => 42,  163 => 43,  161 => 42,  158 => 41,  155 => 40,  150 => 36,  148 => 35,  144 => 33,  141 => 32,  137 => 38,  135 => 32,  132 => 31,  129 => 30,  125 => 24,  122 => 23,  119 => 22,  116 => 21,  112 => 18,  109 => 17,  106 => 16,  98 => 25,  96 => 21,  90 => 19,  88 => 16,  83 => 14,  80 => 13,  78 => 12,  66 => 8,  63 => 7,  57 => 73,  55 => 46,  52 => 45,  50 => 40,  47 => 39,  45 => 30,  41 => 28,  39 => 7,  34 => 5,  29 => 2,  27 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -248,6 +249,7 @@ class __TwigTemplate_dadbe539235cdd97641af31e30adf044f574f2fe46e48d1c90639987608
 
       {% block javascripts %}
         {% do assets.addJs('jquery', 100) %}
+        {% do assets.addJs('theme://js/javascript.js', 100) %}
       {% endblock %}
       {{ assets.js() }}
 
@@ -255,15 +257,13 @@ class __TwigTemplate_dadbe539235cdd97641af31e30adf044f574f2fe46e48d1c90639987608
   </head>
   <body>
     {% block header %}
-      <div class=\"navbar\">
-        <img class=\"logo\" src=\"#\"/>
 
         {% block header_navigation %}
           <nav class=\"header\">
+            <p> Menu </p>
             {% include 'partials/navigation.html.twig' %}
           </nav>
         {% endblock %}
-      </div>
     {% endblock %}
 
     {% block body %}
