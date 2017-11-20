@@ -127,7 +127,7 @@ class __TwigTemplate_dadbe539235cdd97641af31e30adf044f574f2fe46e48d1c90639987608
     {
         // line 30
         echo "      <div class=\"navbar\">
-        <a class=\"logo\" href=\"#\"></a>
+        <img class=\"logo\" src=\"#\"/>
 
         ";
         // line 33
@@ -256,13 +256,13 @@ class __TwigTemplate_dadbe539235cdd97641af31e30adf044f574f2fe46e48d1c90639987608
   <body>
     {% block header %}
       <div class=\"navbar\">
-        <a class=\"logo\" href=\"#\"></a>
+        <img class=\"logo\" src=\"#\"/>
 
         {% block header_navigation %}
           <nav class=\"menu\">
             {% include 'partials/navigation.html.twig' %}
           </nav>
-        {%endblock %}
+        {% endblock %}
       </div>
     {% endblock %}
 
@@ -301,6 +301,6 @@ class __TwigTemplate_dadbe539235cdd97641af31e30adf044f574f2fe46e48d1c90639987608
     {% endblock %}
   </body>
 </html>
-", "partials/pagebase.html.twig", "/Users/pchauhan/Desktop/VICE/speakeasy-vice/grav-admin/user/themes/speakeasy-vice/templates/partials/pagebase.html.twig");
+", "partials/pagebase.html.twig", "/Users/vanessabayubaskoro/Documents/Code the Change/speakeasy-vice/grav-admin/user/themes/speakeasy-vice/templates/partials/pagebase.html.twig");
     }
 }
