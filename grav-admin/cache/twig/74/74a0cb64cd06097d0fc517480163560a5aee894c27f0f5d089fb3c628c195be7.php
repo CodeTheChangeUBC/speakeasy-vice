@@ -178,7 +178,7 @@ class __TwigTemplate_dadbe539235cdd97641af31e30adf044f574f2fe46e48d1c90639987608
           <div class=\"contact-info\">
             <h3> VICE </h3>
             <p> <strong>Location:</strong> AMS Nest 3107, UBC <br>
-                <strong>Office Hours:</strong> Tue,Thu: 13:30 - 15:30 <br> or by Appointment <br>
+                <strong>Office Hours:</strong> Tue, Thu: 13:30 - 15:30 <br> or by Appointment <br>
                 <strong>Email:</strong> vice@ams.ubc.ca <br>
                 <strong>Phone Number:</strong> 604-827-1728
             </p>
@@ -186,7 +186,7 @@ class __TwigTemplate_dadbe539235cdd97641af31e30adf044f574f2fe46e48d1c90639987608
           <div class=\"contact-info\">
             <h3> Speakeasy </h3>
             <p> <strong>Location:</strong> AMS Nest 3107, UBC <br>
-                <strong>Office Hours:</strong> Mon-Fri: 11:00 - 19:00 <br> or by Appointment <br>
+                <strong>Office Hours:</strong> Mon - Fri: 11:00 - 19:00 <br> or by Appointment <br>
                 <strong>Email:</strong> speak@ams.ubc.ca <br>
                 <strong>Phone Number:</strong> 604-822-9246
             </p>
@@ -195,7 +195,7 @@ class __TwigTemplate_dadbe539235cdd97641af31e30adf044f574f2fe46e48d1c90639987608
         </div>
         <div class=\"copyright\">
           <hr>
-          <p> &copy 2017 VICE and Speakeasy. All Rights Reserved. </p>
+          <p> Copyright &copy 2017 VICE and Speakeasy. All Rights Reserved.</p>
         </div>
       </div>
     ";
@@ -278,7 +278,7 @@ class __TwigTemplate_dadbe539235cdd97641af31e30adf044f574f2fe46e48d1c90639987608
           <div class=\"contact-info\">
             <h3> VICE </h3>
             <p> <strong>Location:</strong> AMS Nest 3107, UBC <br>
-                <strong>Office Hours:</strong> Tue,Thu: 13:30 - 15:30 <br> or by Appointment <br>
+                <strong>Office Hours:</strong> Tue, Thu: 13:30 - 15:30 <br> or by Appointment <br>
                 <strong>Email:</strong> vice@ams.ubc.ca <br>
                 <strong>Phone Number:</strong> 604-827-1728
             </p>
@@ -286,7 +286,7 @@ class __TwigTemplate_dadbe539235cdd97641af31e30adf044f574f2fe46e48d1c90639987608
           <div class=\"contact-info\">
             <h3> Speakeasy </h3>
             <p> <strong>Location:</strong> AMS Nest 3107, UBC <br>
-                <strong>Office Hours:</strong> Mon-Fri: 11:00 - 19:00 <br> or by Appointment <br>
+                <strong>Office Hours:</strong> Mon - Fri: 11:00 - 19:00 <br> or by Appointment <br>
                 <strong>Email:</strong> speak@ams.ubc.ca <br>
                 <strong>Phone Number:</strong> 604-822-9246
             </p>
@@ -295,12 +295,16 @@ class __TwigTemplate_dadbe539235cdd97641af31e30adf044f574f2fe46e48d1c90639987608
         </div>
         <div class=\"copyright\">
           <hr>
-          <p> &copy 2017 VICE and Speakeasy. All Rights Reserved. </p>
+          <p> Copyright &copy 2017 VICE and Speakeasy. All Rights Reserved.</p>
         </div>
       </div>
     {% endblock %}
   </body>
 </html>
+<<<<<<< HEAD
 ", "partials/pagebase.html.twig", "/Users/vanessabayubaskoro/Documents/Code the Change/speakeasy-vice/grav-admin/user/themes/speakeasy-vice/templates/partials/pagebase.html.twig");
+=======
+", "partials/pagebase.html.twig", "/Users/andrea/Desktop/CTC VICE/speakeasy-vice/grav-admin/user/themes/speakeasy-vice/templates/partials/pagebase.html.twig");
+>>>>>>> be71aabc6477676ec0542f94b4cc534b853246e5
     }
 }

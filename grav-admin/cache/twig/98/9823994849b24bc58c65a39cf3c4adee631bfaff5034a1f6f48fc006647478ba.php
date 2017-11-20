@@ -313,6 +313,10 @@ class __TwigTemplate_0a735f955877adf0e2c81fe71c35a372c69a961ab3cdaa8c06a240cb985
 </div>
 </body>
 </html>
+<<<<<<< HEAD
 ", "partials/navigation.html.twig", "/Users/vanessabayubaskoro/Documents/Code the Change/speakeasy-vice/grav-admin/user/themes/speakeasy-vice/templates/partials/navigation.html.twig");
+=======
+", "partials/navigation.html.twig", "/Users/andrea/Desktop/CTC VICE/speakeasy-vice/grav-admin/user/themes/speakeasy-vice/templates/partials/navigation.html.twig");
+>>>>>>> be71aabc6477676ec0542f94b4cc534b853246e5
     }
 }

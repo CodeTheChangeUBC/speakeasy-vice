@@ -64,6 +64,10 @@ class __TwigTemplate_cdc27c60a1e17906fc833827b5044a7c623f6ef13baa16f34eebfab8344
 {% block content %}
     {{ page.content }}
 {% endblock %}
+<<<<<<< HEAD
 ", "opening.html.twig", "/Users/vanessabayubaskoro/Documents/Code the Change/speakeasy-vice/grav-admin/user/themes/speakeasy-vice/templates/opening.html.twig");
+=======
+", "opening.html.twig", "/Users/andrea/Desktop/CTC VICE/speakeasy-vice/grav-admin/user/themes/speakeasy-vice/templates/opening.html.twig");
+>>>>>>> be71aabc6477676ec0542f94b4cc534b853246e5
     }
 }
