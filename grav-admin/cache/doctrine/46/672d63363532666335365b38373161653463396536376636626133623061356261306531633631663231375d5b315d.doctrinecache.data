@@ -1,0 +1,47 @@
+1511740766
+a:2:{s:7:"content";s:765:"<div class="margin">
+
+<div class="welcome">
+      <h1><center> WELCOME </center></h1>
+</div>
+
+
+<center> <img src="/speakeasy-vice/grav-admin/images/banner.png"> </center>
+
+<div>
+<h1> Here, you will find information on:</h1>
+</div>
+
+<div class="top_half">
+
+<!--
+<div>
+  <img src="http://www.rnrwellness.com/palliser/images/images/wellness.jpg" alt="bubble"></img>
+</div>
+-->
+<img src="/speakeasy-vice/grav-admin/images/man.png" width="100" height="100">
+
+<p>
+1) Academic stress<br>
+2) Relationship issues<br>
+3) Sexual orientation
+</p>
+</div>
+
+<div class="bottom_half">
+
+<div>
+  <img class="bubble" src="../themes/speakeasy-vice/images/people.png" alt="people"></img>
+</div>
+
+<p>
+1) Loneliness<br>
+2) Suicidal thoughts<br>
+3) Disordered eating
+</p>
+</div>
+
+
+</div>
+
+";s:12:"content_meta";N;}

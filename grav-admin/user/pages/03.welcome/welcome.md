@@ -1,34 +1,44 @@
-<title>Welcome</title>
+
+---
+title: Welcome
+---
+
 
 <div class="welcome">
-      <h1>Welcome</h1>
-</div>
-  
-<div class="information">  
-      <p>Here, you can find information on 
- 	<br>1)
-    <br>2)
-    <br>3)    
-</p>
+      <h1><center> WELCOME </center></h1>
 </div>
 
-<div class="image">
-      <img class="image" src="../themes/speakeasy-vice/images/rocks.jpg" alt="rocks" width="200" height="100">
-    </div>
-    
-    
-<div class="information">  
-      <p>Here, you can find information on 
- 	<br>1)
-    <br>2)
-    <br>3)    
-</p>
+
+<center> <img src="/speakeasy-vice/grav-admin/images/banner.png"> </center>
+
+<div>
+<h1> Here, you will find information on:</h1>
 </div>
 
-<div class="image">
-      <img class="image" src="../themes/speakeasy-vice/images/rocks.jpg" alt="rocks" width="200" height="100">
+
+<div class="top_half">
+    <p class="top_body">
+        1) Academic stress<br>
+        2) Relationship issues<br>
+        3) Sexual orientation
+    </p>
+
+    <div id="topbodypicture">
+        <img src="/speakeasy-vice/grav-admin/images/man.png"/>
     </div>
+
+</div>
+
+<div class="bottom_half">
+    <p class="bottom_body">
+        1) Loneliness<br>
+        2) Suicidal thoughts<br>
+        3) Disordered eating
+    </p>
     
+    <div id="bottombodypicture">
+        <img src="/speakeasy-vice/grav-admin/images/people.png"/>
+    </div>
 </div>
 
 

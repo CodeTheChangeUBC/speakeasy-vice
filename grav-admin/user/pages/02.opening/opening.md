@@ -5,15 +5,18 @@
 <!-- Styles -->	
 <style style="home-bg">
 body {
-  background-image: url("../themes/speakeasy-vice/images/rocks.jpg");
-  background-position: 50% 50%;
-  background-repeat: repeat;
+  background-image: url("/speakeasy-vice/grav-admin/images/rocks.jpg");
+  width: 100%;
+  height: 500px;
+  background-position: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 </style>
 <body>
 
  
- <div align="left|right|center">
+ <div align="center">
      <center><font size="7"><h1><u>AMS</u></h1></font>
          <font size="7"><b>WELLNESS</b></font></center>
 </div>    

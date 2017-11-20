@@ -1,0 +1,52 @@
+1511743458
+a:2:{s:7:"content";s:727:"<div class="margin">
+
+<div class="welcome">
+      <h1><center> WELCOME </center></h1>
+</div>
+
+
+<center> <img src="/speakeasy-vice/grav-admin/images/banner.png"> </center>
+
+<div>
+<h1> Here, you will find information on:</h1>
+</div>
+
+<div class="info">
+
+<div class="top_half">
+
+<p class="top_body">
+1) Academic stress<br>
+2) Relationship issues<br>
+3) Sexual orientation
+</p>
+
+<div id="topbodypicture">
+<img src="/speakeasy-vice/grav-admin/images/man.png"/>
+</div>
+
+</div>
+<div>
+<div class="bottom_half">
+
+<p class="bottom_body">>
+1) Loneliness<br>
+2) Suicidal thoughts<br>
+3) Disordered eating
+</p>
+
+</div>
+
+<div id="bottombodypicture">
+<img src="/speakeasy-vice/grav-admin/images/people.png"/>
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+";s:12:"content_meta";N;}

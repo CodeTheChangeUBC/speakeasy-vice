@@ -1,0 +1,44 @@
+1511735826
+a:2:{s:7:"content";s:596:"<div class="margin">
+
+<div class="welcome">
+      <h1><center> WELCOME </center></h1>
+</div>
+
+
+<center> <img class="banner-image" src="../themes/speakeasy-vice/images/got_your_back.png"> </center>
+
+<div>
+<h1> Here, you will find information on:</h1>
+</div>
+
+<div class="top_half">
+
+<div>
+  <img class="bubble" src="../themes/speakeasy-vice/images/bubble.png" alt="bubble"></img>
+</div>
+
+<p>
+1)<br>
+2)<br>
+3)
+</p>
+</div>
+
+<div class="bottom_half">
+
+<div>
+  <img class="bubble" src="../themes/speakeasy-vice/images/people.png" alt="people"></img>
+</div>
+
+<p>
+1)<br>
+2)<br>
+3)
+</p>
+</div>
+
+
+</div>
+
+";s:12:"content_meta";N;}

@@ -12,32 +12,99 @@ html {
   text-align: center;
 }
 
-/*
-  white = #FFFFFF
-  light grey = #EFEFEF
-  darker grey = #C8C8C8
-*/
+welcome {
+  font-size: 50pt;
+  text-decoration:underline;
+  color:#99C44E;    
+}
+
+.top_half{
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  height: 20vh;
+  background-color: #e6e8ed;
+  color: #000000;
+   padding-top: 20px; 
+}
+
+.top_body {
+    text-align: justify;
+    font-size: 20pt;
+    width: 20%;
+    margin:0 auto;
+    margin-left:27%;
+    margin-top:1%;
+    display: inline-block;
+}
+
+#topbodypicture img{
+    display:inline-block;
+    width: 120px;
+    height: 120px;
+}
+
+#topbodypicture{
+    float:right;
+    padding-right: 20%; 
+}
+
+
+.bottom_half{
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  height: 20vh;
+  background-color:white;
+  color: #000000;
+   padding-top: 20px; 
+}
+
+.bottom_body {
+    text-align: justify;
+    font-size: 20pt;
+    width: 20%;
+    margin:0 auto;
+    margin-left:27%;
+    margin-top:1%;
+    display: inline-block;
+}
+
+#bottombodypicture img{
+    display:inline-block;
+    width: 120px;
+    height: 120px;
+}
+
+#bottombodypicture{
+    float:right;
+    padding-right: 20%; 
+}
+
 
 /* Homepage */
+/*
 .home-bg {
     width: 100%;
     height: 500px;   //500px
-    background: url("../images/rocks.jpg");
+    background-image: url("https://stormiesteele.files.wordpress.com/2014/07/meditation-rocks.jpeg");
+*/
 /*
     background-size: cover;
     background-repeat: no-repeat;
 */
-}
 .AMS {
     color: red;
 }
 
+/*
 .welcome{
     font-style:normal;
     font-weight:normal;
     text-decoration:underline;
 }
-}
+*/
+
 .image{
     background: url("../images/rocks.jpg");
     text-align: right;
