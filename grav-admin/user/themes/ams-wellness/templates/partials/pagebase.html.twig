@@ -1,0 +1,100 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+
+<!DOCTYPE html>
+
+<html lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
+  <head>
+    {% block head %}
+      <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+      <meta charset="UTF-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      {% include 'partials/metadata.html.twig' %}
+
+      {# To add a favicon, put the image file into the folder at themes/ams-wellness/images,
+      and insert the path like so {{ url('theme://images/someFile.someExtension') }} #}
+      <link rel="icon" type="image/png" href="{{ url('theme://images/logo.png') }}" />
+
+      {# Bootstrap #}
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+      {% block stylesheets %}
+        {% do assets.addCss('theme://css/custom.css', 100) %}
+      {% endblock %}
+      {{ assets.css() }}
+
+      {% block javascripts %}
+        {% do assets.addJs('jquery', 100) %}
+        {% do assets.addJs('theme://js/custom.js', 100) %}
+      {% endblock %}
+      {{ assets.js() }}
+
+    {% endblock %}
+  </head>
+  <body>
+    {# The navigation bar's base code #}
+    {% block header %}
+      {% block header_navigation %}
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark py-3">
+          {# The text below displays in the navigation bar to the far left #}
+          <div class="navbar-brand pl-5">AMS Wellness</div>
+          <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            {% include 'partials/navigation.html.twig' %}
+          </div>
+        </nav>
+      {% endblock %}
+    {% endblock %}
+
+    {% block body %}
+    <div class="container-fluid">
+      {# All of the page's content is inserted here #}
+      {% block content %} {% endblock %}
+    </div>
+    {% endblock %}
+
+    {% block footer %}
+    <div class="container-fluid footer">
+      <div class="container text-center">
+        <div class="row pt-4">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            {# Change the text below to update the contact information for VICE #}
+            <h3> VICE </h3>
+            {# The <strong>...</strong elements bold the text in between them,
+                 The <br> elements create a line break #}
+            <p> <strong>Location:</strong> AMS Nest 3107, UBC <br>
+                <strong>Office Hours:</strong> Tue,Thu: 13:30 - 15:30 <br> or by Appointment <br>
+                <strong>Email:</strong> vice@ams.ubc.ca <br>
+                <strong>Phone Number:</strong> 604.827.1728
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            {# Change the text below to update the contact information for Speakeasy #}
+            <h3> Speakeasy </h3>
+            {# The <strong>...</strong elements bold the text in between them,
+                 The <br> elements create a line break #}
+            <p> <strong>Location:</strong> AMS Nest 3107, UBC <br>
+                <strong>Office Hours:</strong> Mon-Fri: 11:00 - 19:00 <br> or by Appointment <br>
+                <strong>Email:</strong> speak@ams.ubc.ca <br>
+                <strong>Phone Number:</strong> 604.822.9246
+            </p>
+          </div>
+        </div>
+        {# Delete the <hr> element to get rid of the line between the contact information and the copyright information #}
+        <hr>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            {# The text displayed at the very bottom of the footer, make sure to change the year when needed #}
+            <p> Copyright &copy; 2018 VICE and Speakeasy. All Rights Reserved. Website By <a id="ctc" href="https://codethechangeubc.org/" target="_blank"> Code the Change UBC </a> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endblock %}
+  </body>
+</html>

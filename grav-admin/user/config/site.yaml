@@ -1,0 +1,17 @@
+title: 'AMS Wellness'                                        # The website's title as seen through search engines (ie. Google)
+default_lang: en
+author:
+  name: 'Code the Change UBC'
+  email: info@codethechangeubc.org
+taxonomies:
+  - category
+  - tag
+metadata:
+  description: 'AMS Wellness featuring VICE & Speakeasy'      # The website's description as seen through search engines
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+blog:
+  route: /blog

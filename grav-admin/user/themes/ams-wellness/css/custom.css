@@ -1,0 +1,108 @@
+/*
+  Created by Code the Change UBC
+*/
+
+/* General */
+* {
+  font-family: Helvetica, sans-serif;      /* Add a font by removing Helvetica or adding it before Helvetica */            
+}
+a, a:hover, #ctc {
+  color: #777777;                          /* Changes the colour of the links */
+}
+a:hover {
+  text-decoration: underline;              /* Set to none to get rid of the underline when links are hovered over */
+}
+.footer {
+  background-color: #efefef;                /* The background colour of the footer */
+  color: black;                             /* The colour of the footer's text */
+}
+hr {
+  background-color: #757575;                /* The colour of the line that divides sections on each page */
+}
+
+/* Navbar */
+.navbar, .dropdown-menu, .collapse {
+  background-color: #333333 !important;     /* The background colour of the navigation bar */
+}
+.active {
+  border-bottom: solid 2px #9AC156;         /* The line that appears in the navigation bar on the current page, change #9AC156 to change the colour */
+}
+.nav-link {
+  position: relative;
+}
+.nav-item:not(.active) .nav-link:before {   /* The navigation bar animation that creates the line that expands when you hover over a page */
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #9AC156;                /* Changes the colour of the line that appears when hovering over a page in the navigation bar */
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.nav-item:not(.active) .nav-link:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* Homepage */
+.homebg {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-positon: center center;
+  padding-top: 250px;
+}
+#ams {
+  font-size: 5em;                           /* The size of the "AMS" on the homepage, can also use units of px (pixels) */
+  font-weight: 500;                         /* How bold the "AMS" text is */
+}
+#wellness {
+  font-size: 7.5em;                         /* The size of the "Wellness" on the homepage, can also use units of px (pixels) */
+  overflow: hidden;
+}
+#homebtn {
+  font-size: 3em !important;                /* The size of the "ENTER" button's text on the homepage, can also use units of px (pixels) */
+  font-weight: 700;                         /* How bold the "ENTER" text is */
+}
+.homebg h1, .homebg h3, .homebg p, #homebtn {
+  color: white !important;                  /* The color of the text on the home page */
+}
+
+/* Pages */
+.content-pics {                             /* The pictures that are displayed on every page, except for the home page */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100px;
+}
+
+/* 404 */
+.error {
+  min-height: 63vh !important;
+}
+
+/* Breakpoints */
+@media only screen and (max-width: 767px) {
+  .content-pics {
+    margin-bottom: 1em;
+    min-height: 500px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #ams {
+    font-size: 4em;                         /* The size of the "AMS" on the homepage for small screens, can also use units of px (pixels) */
+  }
+  #wellness {
+    font-size: 4.5em;                       /* The size of the "Wellness" on the homepage for small screens, can also use units of px (pixels) */
+  }
+  #homebtn {
+    font-size: 1em;                         /* The size of the "ENTER" button's text on the homepage for small screens, can also use units of px (pixels) */
+  }
+}

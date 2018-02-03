@@ -1,0 +1,17 @@
+---
+media_order: home-bg.jpeg
+---
+
+<div class="row justify-content-md-center pt-4">
+<div class="col-lg-4 col-md-6 col-sm-12 content-pics" style="background-image: url(../images/home-bg.jpeg)">
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12" markdown="1">
+### EDUCATION {.h3}
+Vice aims to provide students with evidence-based, nonstigmatizing information about substances. We believe that this is the first step in reducing the harms that often accompany substance use, from hangovers to addiction to overdose. Our mission is broad, and we plan to develop resources around average use statistics, substance use myths, safer use techniques, recognizing red flags for problematic use and addiction, avoiding overdose, and keeping yourself safe, should you choose to use. Keep an eye out for our booths, events, and contact us for free, customized, interactive workshops for student groups.
+</div>
+</div>
+<div class="row justify-content-md-center mb-4">
+<div class="col-lg-8 col-md-12 col-sm-12">
+<hr>
+</div>
+</div>
